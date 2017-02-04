@@ -1,5 +1,5 @@
 # DeTrumper
-Have you ever wanted a Trump-free view of world news? This add-on script for your browser will eradicate Trump from BBC News pages.
+Have you ever wanted a Trump-free view of world news? Install this browser script to eradicate Trump from BBC News!
 
 ## Install in Chrome
 1. Install TamperMonkey from the [Chrome Extension store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
@@ -13,4 +13,4 @@ Have you ever wanted a Trump-free view of world news? This add-on script for you
 2. Drag DeTrumper.user.js onto your Firefox window
 3. Accept the installation prompt
 
-## Enjoy browsing BBC News Trump-free!
+### Enjoy browsing BBC News Trump-free!
