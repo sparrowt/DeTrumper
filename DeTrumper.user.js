@@ -40,6 +40,9 @@
        || classMatches(elem, "spoonbill-item")            // BBC news 'Watch/Listen' side bar item
        || classMatches(elem, "sparrow-item")              // BBC news grey box sub-item
        || classMatches(elem, "kestrel-item")              // BBC news grey box bigger item
+       || classMatches(elem, "macaw-item")                // BBC news simple text link
+       || classMatches(elem, "faux-block-link")           // BBC news another link type
+       || classMatches(elem, "falcon")                    // BBC news 'Breaking News' bottom banner
        || classMatches(elem, "most-popular-list-item")    // BBC news top videos side bar
        || classMatches(elem, "top-stories-promo-story"))  // BBC news top stories side bar
       {
