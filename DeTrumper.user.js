@@ -3,7 +3,7 @@
 // @namespace   https://about.me/tomsparrow
 // @description Browse BBC news Trump-free
 // @include     *.bbc.co.uk/*
-// @version     1.0
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 
@@ -12,7 +12,9 @@
   window.setTimeout(deTrumpify, 100);
   window.setTimeout(deTrumpify, 500);
   window.setTimeout(deTrumpify, 1000);
-  window.setInterval(deTrumpify, 2000);
+  window.setTimeout(deTrumpify, 2000);
+  window.setTimeout(deTrumpify, 5000);
+  window.setTimeout(deTrumpify, 10000);
 
   function deTrumpify() {
     console.log("deTrumpifying your page");
@@ -48,18 +50,14 @@
     } catch (e) {}
   }
 
-  function containsText(element, txt) {
-    var contents = getContainedText(element);
+  function containsText(elem, txt) {
+    var contents = getContainedText(elem);
     return contents.length > 0 && (contents.indexOf(txt) != -1);
   }
   
   function getContainedText(elem) {
-    if (typeof elem.textContent == 'string') {
-      return elem.textContent;
-    }
-    if (typeof elem.innerText == 'string') {
-      return elem.innerText;
-    }
+    if (typeof elem.textContent == 'string') { return elem.textContent; }
+    if (typeof elem.innerText == 'string') { return elem.innerText; }
   }
   
   function classMatches(elem, cls) {
