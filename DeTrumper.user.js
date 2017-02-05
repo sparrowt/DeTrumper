@@ -34,13 +34,14 @@
   
   function handleElem(elem) {
     try {
-      if (
-        classMatches(elem, "top-story__wrapper") ||     // BBC home page
-        classMatches(elem, "top-story") ||              // BBC home page
-        classMatches(elem, "nw-c-top-stories__.*") ||   // BBC News home page
-        classMatches(elem, "most-popular-list-item") || // BBC News top videos side bar
-        classMatches(elem, "top-stories-promo-story")   // BBC News top stories side bar
-         )
+      if (classMatches(elem, "top-story__wrapper")        // BBC home page
+       || classMatches(elem, "top-story")                 // BBC home page
+       || classMatches(elem, "nw-c-top-stories__.*")      // BBC news home page
+       || classMatches(elem, "spoonbill-item")            // BBC news 'Watch/Listen' side bar item
+       || classMatches(elem, "sparrow-item")              // BBC news grey box sub-item
+       || classMatches(elem, "kestrel-item")              // BBC news grey box bigger item
+       || classMatches(elem, "most-popular-list-item")    // BBC news top videos side bar
+       || classMatches(elem, "top-stories-promo-story"))  // BBC news top stories side bar
       {
         if (containsText(elem, "Trump")) {
           console.log("Hiding element with text: '" + getContainedText(elem) + "'");
